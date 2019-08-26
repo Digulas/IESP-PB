@@ -3,11 +3,11 @@ package modelo;
 
 public abstract class Jogo {
     
-    int idJogo;
-    String nome;
-    int quantidadeJogos;
-    float precoAluguel;
-    int quantidadePessoas;
+    private int idJogo;
+    private String nome;
+    private int quantidadeJogos;
+    protected float precoAluguel;
+    protected int quantidadePessoas;
 
     public Jogo(int idJogo, String nome, int quantidadeJogos, float precoAluguel, int quantidadePessoas) {
         this.idJogo = idJogo;

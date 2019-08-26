@@ -5,12 +5,13 @@ import java.util.ArrayList;
 import modelo.Jogo;
 
 public class Compra {
-
+	
+	private static ArrayList<Jogo> listajogo = new ArrayList<Jogo>();
+    private static int tempo;
+    private static Cliente rodrigo = new Cliente("Rodrigo", tempo, jogo);
+    
     public static void main(String[] args) {
         
-        ArrayList<String> jogo = new ArrayList<>();
-        int tempo;
-        Cliente rodrigo = new Cliente("Rodrigo", tempo, jogo);
     }
     
 public class Funcionario {

@@ -5,14 +5,17 @@ import java.util.ArrayList;
 
 public class JogoTabuleiro extends Jogo {
     
-    String estilo;
-    ArrayList<String> adereco = new ArrayList<>();
+    private String estilo;
+    private ArrayList<String> adereco = new ArrayList<>();
 
-    public JogoTabuleiro(int idJogo, String nome, int quantidadeJogos, float precoAluguel, int quantidadePessoas) {
-        super(idJogo, nome, quantidadeJogos, precoAluguel, quantidadePessoas);
-    }
-    
-    public String getEstilo() {
+    public JogoTabuleiro(int idJogo, String nome, int quantidadeJogos, float precoAluguel, int quantidadePessoas,
+			String estilo, ArrayList<String> adereco) {
+		super(idJogo, nome, quantidadeJogos, precoAluguel, quantidadePessoas);
+		this.estilo = estilo;
+		this.adereco = adereco;
+	}
+
+	public String getEstilo() {
 		return estilo;
 	}
 
@@ -30,5 +33,5 @@ public class JogoTabuleiro extends Jogo {
 
 	@Override
     public float calcularTotal(){    
-    return (precoAluguel / quantidadePessoas) - 10;};
+    return (precoAluguel / quantidadePessoas) - 0.9f;};
 }

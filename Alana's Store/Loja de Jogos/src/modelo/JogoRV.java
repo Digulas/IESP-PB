@@ -3,11 +3,15 @@ package modelo;
 
 public class JogoRV extends JogoDigital {
 
-	String tipoCapacete;
-	String estereoscopia;
-	
-	public JogoRV(int idJogo, String nome, int quantidadeJogos, float precoAluguel, int quantidadePessoas) {
-		super(idJogo, nome, quantidadeJogos, precoAluguel, quantidadePessoas);
+	private String tipoCapacete;
+	private String estereoscopia;
+
+	public JogoRV(int idJogo, String nome, int quantidadeJogos, float precoAluguel, int quantidadePessoas,
+			int anoCriacao, String produtora, String tipoCapacete, String estereoscopia) {
+		super(idJogo, nome, quantidadeJogos, precoAluguel, quantidadePessoas, anoCriacao, produtora);
+		this.tipoCapacete = tipoCapacete;
+		this.estereoscopia = estereoscopia;
+
 	}
 
 	public String getTipoCapacete() {

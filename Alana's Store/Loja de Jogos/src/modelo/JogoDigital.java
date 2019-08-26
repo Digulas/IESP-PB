@@ -3,14 +3,17 @@ package modelo;
 
 public class JogoDigital extends Jogo {
     
-    int anoCriacao;
-    String produtora;
-
-    public JogoDigital(int idJogo, String nome, int quantidadeJogos, float precoAluguel, int quantidadePessoas) {
-        super(idJogo, nome, quantidadeJogos, precoAluguel, quantidadePessoas);
-    }
+    private int anoCriacao;
+    private String produtora;
     
-    public int getAnoCriacao() {
+    public JogoDigital(int idJogo, String nome, int quantidadeJogos, float precoAluguel, int quantidadePessoas,
+			int anoCriacao, String produtora) {
+		super(idJogo, nome, quantidadeJogos, precoAluguel, quantidadePessoas);
+		this.anoCriacao = anoCriacao;
+		this.produtora = produtora;
+	}
+
+	public int getAnoCriacao() {
 		return anoCriacao;
 	}
 

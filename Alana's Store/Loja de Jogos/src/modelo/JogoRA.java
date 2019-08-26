@@ -3,11 +3,14 @@ package modelo;
 
 public class JogoRA extends JogoDigital{
 	
-	String dispositivo;
-	String marcador;
-
-	public JogoRA(int idJogo, String nome, int quantidadeJogos, float precoAluguel, int quantidadePessoas) {
-		super(idJogo, nome, quantidadeJogos, precoAluguel, quantidadePessoas);
+	private String dispositivo;
+	private String marcador;
+		
+	public JogoRA(int idJogo, String nome, int quantidadeJogos, float precoAluguel, int quantidadePessoas,
+			int anoCriacao, String produtora, String dispositivo, String marcador) {
+		super(idJogo, nome, quantidadeJogos, precoAluguel, quantidadePessoas, anoCriacao, produtora);
+		this.dispositivo = dispositivo;
+		this.marcador = marcador;
 	}
 
 	public String getDispositivo() {
