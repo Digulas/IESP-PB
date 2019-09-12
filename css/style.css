@@ -1,0 +1,120 @@
+/* Cabeçalho */
+
+#topo{
+
+  padding-bottom: 30px;
+  border-bottom: 1px inset rgba(199, 194, 194, 0.836);
+
+}
+
+/* Logotipo */
+
+#logotipo {
+
+  display: inline;
+  width: 110px;
+  height: 110px;
+  float: left;
+  margin-top: -10px;
+  margin-left:4%;
+
+}
+
+/* Menu Principal */
+
+.menu {
+
+  width: auto;
+
+}
+.menu ul {
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+
+}
+  
+
+.menu li {
+
+  float: left;
+
+}
+
+
+.menu li a {
+
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-top: 20px;
+
+}
+
+.menu a {
+
+  display: block;
+  padding: 8px;
+  font-size: 20px;
+  font-weight: bolder;
+  font-family: sans-serif;
+  
+}
+
+/* Menu de Serviços */
+
+.opcoes {
+
+  margin-left: 60%;
+  display: block;
+  margin-top: -30px
+}
+
+.opcoes a {
+
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: inline;
+  text-decoration: none;
+  color: gray;
+  font-size: 11px;
+  padding-right: 12px;
+
+}
+
+
+#perfil {
+
+  float: right;
+  position: absolute;
+  padding-left: 15px;
+
+}
+
+/* Barra de busca */
+
+#busca {
+
+  display: block;
+  margin-top: -28px;
+  float: right;
+
+}
+
+#buscador {
+
+  font-family: sans-serif;
+  margin-top: -28px;
+  height: 30px;
+  width: 250px;
+  background: url('https://s.glbimg.com/en/ho/static/header_2016_home/img/lupa.svg?3ec465bb1148') no-repeat left 9px top 8px;
+  background-size: 15px;
+  background-style: ridge;
+  border-radius: 4px;
+  text-align: center;
+  word-spacing: -2px;
+
+}
+
